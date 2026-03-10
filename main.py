@@ -5,6 +5,7 @@ from tools.ocr import get_ocr_engine
 
 # routes
 from tools.ocr.routes import router as ocr_router
+from tools.printer.zebra.routes import router as zebra_router
 
 import paddle
 import paddleocr
@@ -47,8 +48,8 @@ async def health_check():
     return {"status": "healthy"}
 
 
-
 app.include_router(ocr_router)
+app.include_router(zebra_router)
 
 
 if __name__ == "__main__":

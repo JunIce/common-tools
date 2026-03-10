@@ -5,7 +5,8 @@ A FastAPI-based microservice providing common utility tools.
 ## Tools
 
 - **OCR**: Offline OCR service using PaddleOCR for text recognition. [See details](./tools/ocr/README.md)
-- **Printer**: (Coming soon)
+- **Printer**: Printer tools
+  - **Zebra**: Send ZPL templates to Zebra printers. [See details](./tools/printer/zebra/README.md)
 
 ## Requirements
 
@@ -65,7 +66,8 @@ See [OCR Tool](./tools/ocr/README.md) for OCR API details.
 │   ├── ocr/               # OCR tool
 │   │   ├── ocr.py        # OCR engine
 │   │   └── routes.py     # OCR API routes
-│   └── printer/          # Printer tool (coming soon)
+│   └── printer/          # Printer tool
+│       └── zebra/       # Zebra printer tool
 ├── models/                # Model files
 └── temp/                 # Temporary files
 ```
